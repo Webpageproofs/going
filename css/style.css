@@ -687,7 +687,7 @@ h6 {
       left: 30px; } }
   @media (max-width: 650px) {
     .tour__name {
-      font-size: 12px; } }
+      font-size: 15px; } }
 
 .tour__info {
   position: absolute;
@@ -762,6 +762,9 @@ h6 {
     @media (min-width: 1600px) {
       .description__title {
         margin-bottom: 40px; } }
+    @media (max-width: 576px) {
+      .description__title {
+        margin-bottom: 20px; } }
   .description__line {
     display: inline-block;
     height: 6px;
@@ -774,6 +777,9 @@ h6 {
     @media (max-width: 1030px) {
       .description__line {
         height: 3px; } }
+    @media (max-width: 576px) {
+      .description__line {
+        margin-bottom: 20px; } }
   .description__tour-text {
     margin-bottom: 3.125vw; }
     @media (min-width: 1600px) {
@@ -889,19 +895,19 @@ h6 {
   justify-content: center;
   background: url(../img/bg/overlay.png) center/cover no-repeat; }
 
-@media (max-width: 700px) {
-  .feature__play-icon img {
-    width: 50%;
-    -webkit-transform: translate(50%, 0);
-    -ms-transform: translate(50%, 0);
-    transform: translate(50%, 0); } }
-
-@media (max-width: 500px) {
-  .feature__play-icon img {
-    width: 30%;
-    -webkit-transform: translate(100%, 0);
-    -ms-transform: translate(100%, 0);
-    transform: translate(100%, 0); } }
+.feature__play-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media (max-width: 700px) {
+    .feature__play-icon img {
+      width: 50%; } }
 
 .feature__lettering {
   position: absolute;
@@ -1049,6 +1055,10 @@ h6 {
     .caegories__p {
       bottom: 30px;
       left: 30px; } }
+  @media (max-width: 650px) {
+    .caegories__p {
+      font-size: 15px;
+      word-break: break-all; } }
 
 .caegories__nav {
   margin: 0 auto;
@@ -1313,6 +1323,9 @@ h6 {
     @media (min-width: 1600px) {
       .form__input {
         padding: 25px 40px; } }
+    @media (max-width: 650px) {
+      .form__input {
+        padding: 10px; } }
   .form__btn {
     width: 25%;
     margin-right: 1.04167vw;
